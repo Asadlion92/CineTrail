@@ -62,3 +62,17 @@ a {
     cursor: pointer;
     padding: 5px;
 }
+
+.theme-icon-active {
+    background-color: var(--red);
+    padding: 0;
+}
+
+.create-account-btn {
+    background-color: var(--red);
+    color: var(--white);
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
