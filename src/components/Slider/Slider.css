@@ -27,7 +27,7 @@
     color: var(--white);
     width: 50%;
     bottom: 0;
-    padding: 20px 60px; /*used 20px instead of 50px*/
+    padding: 50px 60px; /*used 20px instead of 50px*/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
