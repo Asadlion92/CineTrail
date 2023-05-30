@@ -14,7 +14,9 @@ function MovieCard({movie, width, height, radius, cardStyle, imgUrl, movidId}) {
         height,
         position: "relative",
         borderRadius: radius,
-        boxShadow: cardStyle === "popular-card" ? "0px 0px 0px 10px 0px rgba(118 118 118 0.75)" : null
+        boxShadow: cardStyle === "popular-card" 
+            ? "rgba(118 118 118 0.75) 0px 0px 10px 0px" 
+            : null
     }
 
     const hyperRef = `movieDetails/${movie.id}`

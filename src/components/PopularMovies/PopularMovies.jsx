@@ -20,17 +20,16 @@ function PopularMovies({apiKey, baseUrl}) {
         <h3 className='popular-title'>Popular Movies</h3>
         <div className="popular-cards-wrapper">{
             popularMovies.map((movie)=> (
-                <p key={movie.id}>
-                    <MovieCard 
-                        movie={movie} 
-                        width="200px" 
-                        height="300px" 
-                        radius="16px" 
-                        cardStyle="popular-card" 
-                        imgUrl={movie.poster_path}
-                        movieId={movie.id}
-                    />
-                </p>
+                <MovieCard
+                    key={movie.id} 
+                    movie={movie} 
+                    width="200px" 
+                    height="300px" 
+                    radius="16px" 
+                    cardStyle="popular-card" 
+                    imgUrl={movie.poster_path}
+                    movieId={movie.id}
+                />
         ))}
         </div>
         <div className="page-numbers">
