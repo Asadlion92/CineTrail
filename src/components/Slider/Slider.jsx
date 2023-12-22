@@ -26,7 +26,8 @@ function Slider({apiKey, baseUrl}) {
     height: "60vh",
     backgroundSize: "cover",
     backgroundPosition: "center",
-    position: "relative"
+    position: "relative",
+
   }
 
   const handleRight = () => {

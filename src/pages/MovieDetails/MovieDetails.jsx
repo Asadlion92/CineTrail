@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from 'react'
+import React, {useState, useEffect, useCon} from 'react'
 import './MovieDetails.css'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
@@ -10,9 +10,9 @@ function MovieDetails({baseUrl, apiKey}) {
     const {movieid} = useParams
     const [videoLink, setVideoLink] = useState('')
     const [movie, setMovie] = useState([])
-    const { darkMode, setDarkMode } = useContext(ThemeContext);
+    // const { darkMode, setDarkMode } = useContext(ThemeContext);
 
-    //LEFT OFF AT 32:00 WEEK 3 CLASS 1
+    //LEFT OFF AT 25:00 WEEK 3 CLASS 1
 
     useEffect(() => {
         axios.get(`${baseUrl}/movie/${movieid}?api_key=${apiKey}`)
@@ -34,23 +34,10 @@ function MovieDetails({baseUrl, apiKey}) {
 
 
   return (
-    <div className={darkMode ? "header-container" : "header-container header-light"}>
-    {
+    // <div className={darkMode ? "header-container" : "header-container header-light"}>
 
-      videoLink ?
-        <div className='trailer-container'>
-          <ReactPlayer className="trailer-player" url={`https://www.youtube.com/watch?v=${videoLink}`} />
-        </div>
-        :
-        <div className='trailer-container-blank' style={{
-              backgroundImage: `url("https://api.themoviedb.org/original${movie?.backdrop_path}")`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-        }}></div>
-
-    }
-
-    </div>
+    // </div>
+    <div></div>
   )
 }
 
