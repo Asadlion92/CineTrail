@@ -6,6 +6,7 @@ import ThemeContextProvider from './contexts/ThemeContext'
 import Homepage from './pages/Homepage/Homepage'
 import MovieDetails from './pages/MovieDetails/MovieDetails'
 import Signup from './components/Users/Signup'
+import Signin from './components/Users/Signin'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Homepage apiKey={apiKey} baseUrl={baseUrl} />} />
           <Route path='/signup' element={<Signup />} />
+          <Route path='/signin' element={<Signin />} />
           <Route path='/moviedetails/:movieid' element={<MovieDetails apiKey={apiKey} baseUrl={baseUrl} />} />
         </Routes>
       </BrowserRouter>
